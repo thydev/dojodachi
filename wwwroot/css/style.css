@@ -1,0 +1,31 @@
+body {
+    /* background-color: #adadad; */
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-header {
+    margin: 0 auto;
+
+}
+.feature {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.info-content {
+    margin: 0 auto;
+}
+.info-content img {
+    width: 400px;
+    height: auto;
+}
+
+.footer button {
+    padding: 5px 20px;
+    margin: 0 20px;
+}
