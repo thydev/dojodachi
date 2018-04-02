@@ -19,7 +19,7 @@ body {
 }
 
 .info-content {
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .info-content img {
     width: 400px;
@@ -29,4 +29,8 @@ body {
 .footer button {
     padding: 5px 20px;
     margin: 0 20px;
+}
+
+.restart-btn {
+    display: none;
 }
