@@ -22,6 +22,15 @@ namespace dojodachi.Controllers
                 HttpContext.Session.SetObjectAsJson("dachi", dachi);
             } else {
                 dachi = HttpContext.Session.GetObjectFromJson<Dachi>("dachi");
+                //When refresh the page after loss or win
+                //Reset the game
+                if(dachi.energy >= 100 && dachi.fullness >= 100 && dachi.happiness >= 100){
+                    dachi = new Dachi();
+                    HttpContext.Session.SetObjectAsJson("dachi", dachi);
+                } else if (dachi.fullness <= 0 || dachi.happiness <= 0){
+                    dachi = new Dachi();
+                    HttpContext.Session.SetObjectAsJson("dachi", dachi);
+                }
             }
             
             ViewBag.dachi = dachi;
